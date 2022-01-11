@@ -18,7 +18,7 @@ const Transacted = () => {
         onChange={e => setType(e.target.value)}
       />
       <Input
-        label="1. Property Type"
+        label="2. Address"
         value={address1}
         onChange={e => setAddress1(e.target.value)}
       />

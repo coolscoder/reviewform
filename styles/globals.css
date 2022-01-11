@@ -22,6 +22,7 @@ a {
 
 .MuiButton-root  {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   background-color: #4b0082;
+  padding: 1em;
 }
