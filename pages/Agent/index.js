@@ -1,7 +1,17 @@
 import React, { useState } from 'react'
+import Radio from '@mui/material/Radio'
+import RadioGroup from '@mui/material/RadioGroup'
+import FormControlLabel from '@mui/material/FormControlLabel'
 import Title from '../../components/Title'
 import Input from '../../components/Input'
 import styles from './styles.module.css'
+
+const TYPES = [
+  { label: 'Buyer', value: 'buyer'},
+  { label: 'Seller', value: 'seller'},
+  { label: 'Landlord', value: 'landlord'},
+  { label: 'BuyTenenter', value: 'tenent'},
+]
 
 const Agent = () => {
   const [name, setName] = useState('John Doe')
@@ -20,6 +30,16 @@ const Agent = () => {
         value={number}
         onChange={e => setNumber(e.target.value)}
       />
+      <p className={styles.title}>3. Transaction Type</p>
+      <RadioGroup>
+        {TYPES.map(item => (
+          <FormControlLabel
+            key={item.value}
+            value={item.value}
+            control={<Radio />}
+            label={item.label} />
+        ))}
+      </RadioGroup>
     </div>
   )
 }
