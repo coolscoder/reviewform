@@ -40,7 +40,7 @@ const Survey = () => {
       <p className={styles.label}>13. Please tell us more about your experience with the Agent:</p>
       <Input value={caption} placeholder='Header Caption' onChange={e => setCaption(e.target.value)} />
       <TextareaAutosize
-        minRows={5}
+        minRows={10}
         value={bodytext}
         placeholder='Body Text'
         onChange={e => setBodytext(e.target.value)}
