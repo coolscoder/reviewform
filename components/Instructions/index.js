@@ -9,21 +9,19 @@ const FEEDBACKS = [
   { rate: 1, desc: 'Below Average' },
 ]
 
-const Instructions = () => {
-  return (
-    <div>
-      <p className={styles.title}>Instructions</p>
-      <p className={styles.description}>
-        Using the satisfaction scale below, please rate and tick your satisfaction level with the SRI salesperson that served you.
+const Instructions = () => (
+  <>
+    <p className={styles.title}>Instructions</p>
+    <p className={styles.description}>
+      Using the satisfaction scale below, please rate and tick your satisfaction level with the SRI salesperson that served you.
+    </p>
+    {FEEDBACKS.map(item => (
+      <p key={`fd-${item.rate}`} className={styles.rate}>
+        {item.rate} = {item.desc}
       </p>
-      {FEEDBACKS.map(item => (
-        <p key={`fd-${item.rate}`} className={styles.rate}>
-          {item.rate} = {item.desc}
-        </p>
-      ))}
-      <div className={styles.divider} />
-    </div>
-  )
-}
+    ))}
+    <div className={styles.divider} />
+  </>
+)
 
 export default Instructions

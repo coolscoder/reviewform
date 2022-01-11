@@ -7,20 +7,18 @@ import PersonalDetails from '../components/PersonalDetails'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 
-const Home = () => {
-  return (
-    <>
-      <Header />
-      <div className={styles.container}>
-        <Instructions />
-        <Agent />
-        <Survey />
-        <Transacted />
-        <PersonalDetails />
-      </div>
-      <Footer />
-    </>
-  )
-}
+const Home = () => (
+  <>
+    <Header />
+    <div className={styles.container}>
+      <Instructions />
+      <Agent />
+      <Survey />
+      <Transacted />
+      <PersonalDetails />
+    </div>
+    <Footer />
+  </>
+)
 
 export default Home
