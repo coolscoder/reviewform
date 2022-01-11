@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import TextareaAutosize from '@mui/material/TextareaAutosize'
-import Title from '../../components/Title'
-import Ratings from '../../components/Ratings'
-import Input from '../../components/Input'
+import Title from '../@core/Title'
+import Ratings from '../@core/Ratings'
+import Input from '../@core/Input'
 import Questions from './Questions'
 import styles from './styles.module.css'
 

@@ -1,10 +1,10 @@
-import Header from './Header'
-import Instructions from './Instructions'
-import Agent from './Agent'
-import Survey from './Survey'
-import Transacted from './Transacted'
-import PersonalDetails from './PersonalDetails'
-import Footer from './Footer'
+import Header from '../components/Header'
+import Instructions from '../components/Instructions'
+import Agent from '../components/Agent'
+import Survey from '../components/Survey'
+import Transacted from '../components/Transacted'
+import PersonalDetails from '../components/PersonalDetails'
+import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 
 const Home = () => {

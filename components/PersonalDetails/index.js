@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Title from '../../components/Title'
-import Input from '../../components/Input'
+import Title from '../@core/Title'
+import Input from '../@core/Input'
 import styles from './styles.module.css'
 
 const PersonalDetails = () => {

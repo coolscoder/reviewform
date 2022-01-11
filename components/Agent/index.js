@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Radio from '@mui/material/Radio'
 import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
-import Title from '../../components/Title'
-import Input from '../../components/Input'
+import Title from '../@core/Title'
+import Input from '../@core/Input'
 import styles from './styles.module.css'
 
 const TYPES = [
