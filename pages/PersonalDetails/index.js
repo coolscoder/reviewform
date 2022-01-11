@@ -8,7 +8,7 @@ const PersonalDetails = () => {
   const [email, setEmail] = useState('')
 
   return (
-    <div className={styles.personal}>
+    <>
       <Title title="Personal Details" />
       <Input
         label="1. Your Name"
@@ -20,7 +20,7 @@ const PersonalDetails = () => {
         value={email}
         onChange={e => setEmail(e.target.value)}
       />
-    </div>
+    </>
   )
 }
 
