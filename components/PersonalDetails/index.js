@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Title from '../@core/Title'
 import Input from '../@core/Input'
-import styles from './styles.module.css'
 
 const PersonalDetails = () => {
   const [name, setName] = useState('')
