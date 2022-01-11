@@ -1,9 +1,10 @@
 import React from 'react'
+import Title from '../../components/Title'
 import styles from './styles.module.css'
 
 const PersonalDetails = () => {
   return (
-    <div>Personal</div>
+    <Title title="Personal Details" />
   )
 }
 

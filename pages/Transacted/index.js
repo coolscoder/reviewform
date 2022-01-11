@@ -1,9 +1,10 @@
 import React from 'react'
+import Title from '../../components/Title'
 import styles from './styles.module.css'
 
 const Transacted = () => {
   return (
-    <div>Transacted</div>
+    <Title title="Transacted Property Details" />
   )
 }
 

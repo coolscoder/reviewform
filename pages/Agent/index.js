@@ -19,7 +19,7 @@ const Agent = () => {
 
   return (
     <div className={styles.agent}>
-      <Title title="Agent" />
+      <Title title="Agent Information" />
       <Input
         label="1. Agent's Name"
         value={name}
