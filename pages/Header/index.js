@@ -1,5 +1,5 @@
 import React from 'react'
-import TimelapseIcon from '@mui/icons-material/Timelapse';
+import TimelapseIcon from '@mui/icons-material/Timelapse'
 import styles from './styles.module.css'
 
 const Header = () => {
