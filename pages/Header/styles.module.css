@@ -7,5 +7,16 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 32px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  font-weight: bold;
+  margin: 0 8px 0 12px;
 }
