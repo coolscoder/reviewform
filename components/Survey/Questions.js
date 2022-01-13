@@ -7,6 +7,7 @@ import styles from './styles.module.css'
 
 const Questions = ({ data }) => {
   const { register }  = useContext(FormContext)
+
   return (
     <>
       <p className={styles.label}>{data.label}</p>
