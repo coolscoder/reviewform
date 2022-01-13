@@ -20,9 +20,18 @@ const RATINGS = [
 ]
 
 const OPTIONS = [
-  "10. I would engage this Agent again in buying or selling a property.",
-  "11. I would recommend this Agent to a family member and/or a friend.",
-  "12. The Agent and Agency have my permission to use my testimonial in their marketing and promotional materials.",
+  {
+    label: "10. I would engage this Agent again in buying or selling a property.",
+    name: "agent_again",
+  },
+  {
+    label: "11. I would recommend this Agent to a family member and/or a friend.",
+    name: "agent_family",
+  },
+  {
+    label: "12. The Agent and Agency have my permission to use my testimonial in their marketing and promotional materials.",
+    name: "agent_permission",
+  }
 ]
 
 const Survey = () => {
@@ -35,7 +44,7 @@ const Survey = () => {
         <Ratings key={`rt-${index}`} label={item} />
       ))}
       {OPTIONS.map((item, index) => (
-        <Questions key={`qu-${index}`} label={item} />
+        <Questions key={`qu-${index}`} data={item} />
       ))}
       <p className={styles.label}>13. Please tell us more about your experience with the Agent:</p>
       <Input placeholder='Header Caption' name="header_caption" />

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import Radio from '@mui/material/Radio'
 import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
+import { FormContext } from '../../context'
 import Title from '../@core/Title'
 import Input from '../@core/Input'
 import styles from './styles.module.css'
@@ -14,6 +15,8 @@ const TYPES = [
 ]
 
 const Agent = () => {
+  const { register } = useContext(FormContext)
+
   return (
     <div className={styles.agent}>
       <Title title="Agent Information" />
@@ -28,13 +31,15 @@ const Agent = () => {
         defaultValue="+65 9876 5432"
       />
       <p className={styles.title}>3. Transaction Type</p>
-      <RadioGroup>
+      <RadioGroup >
         {TYPES.map(item => (
           <FormControlLabel
             key={item.value}
             value={item.value}
             control={<Radio />}
-            label={item.label} />
+            label={item.label}
+            {...register("transation_type")}
+            />
         ))}
       </RadioGroup>
     </div>
