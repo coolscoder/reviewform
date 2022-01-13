@@ -31,7 +31,7 @@ const Agent = () => {
         defaultValue="+65 9876 5432"
       />
       <p className={styles.title}>3. Transaction Type</p>
-      <RadioGroup >
+      <RadioGroup  defaultValue="buyer" >
         {TYPES.map(item => (
           <FormControlLabel
             key={item.value}

@@ -10,7 +10,7 @@ const Questions = ({ data }) => {
   return (
     <>
       <p className={styles.label}>{data.label}</p>
-      <RadioGroup row>
+      <RadioGroup defaultValue="yes" row>
           <FormControlLabel {...register(data.name)} value="yes" control={<Radio />} label="Yes" />
           <FormControlLabel {...register(data.name)} value="no" control={<Radio />} label="No" />
         </RadioGroup>
