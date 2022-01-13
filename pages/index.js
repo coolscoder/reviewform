@@ -12,7 +12,7 @@ import styles from '../styles/Home.module.css'
 
 const Home = () => {
   const { register, handleSubmit } = useForm()
-  const onSubmit = data => console.log("~~~~~~~>>>   ", data)
+  const onSubmit = data => console.log("FormData: ", data)
 
 
   return (
