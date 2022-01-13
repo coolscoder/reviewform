@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import TextareaAutosize from '@mui/material/TextareaAutosize'
+import { FormContext } from '../../context'
 import Title from '../@core/Title'
 import Ratings from '../@core/Ratings'
 import Input from '../@core/Input'
@@ -25,8 +26,7 @@ const OPTIONS = [
 ]
 
 const Survey = () => {
-  const [caption, setCaption] = useState('')
-  const [bodytext, setBodytext] = useState('')
+  const { register } = useContext(FormContext)
 
   return (
     <div className={styles.survey}>
@@ -38,12 +38,12 @@ const Survey = () => {
         <Questions key={`qu-${index}`} label={item} />
       ))}
       <p className={styles.label}>13. Please tell us more about your experience with the Agent:</p>
-      <Input value={caption} placeholder='Header Caption' onChange={e => setCaption(e.target.value)} />
+      <Input placeholder='Header Caption' name="header_caption" />
       <TextareaAutosize
         minRows={10}
-        value={bodytext}
+        {...register("body_text")}
+        name="body_text"
         placeholder='Body Text'
-        onChange={e => setBodytext(e.target.value)}
       />
     </div>
   )

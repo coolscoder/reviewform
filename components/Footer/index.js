@@ -4,7 +4,7 @@ import styles from './styles.module.css'
 
 const Footer = () => (
   <div className={styles.footer}>
-    <Button variant="contained">SUBMIT</Button>
+    <Button type="submit" variant="contained">SUBMIT</Button>
   </div>
 )
 

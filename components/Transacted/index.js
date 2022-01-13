@@ -1,35 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Title from '../@core/Title'
 import Input from '../@core/Input'
 import styles from './styles.module.css'
 
 const Transacted = () => {
-  const [type, setType] = useState('HBD')
-  const [address1, setAddress1] = useState('Ave 1 Robinson ')
-  const [address2, setAddress2] = useState('Blk 123, S(000100)')
-  const [unit, setUnit] = useState(0)
-
   return (
     <div className={styles.transacted}>
       <Title title="Transacted Property Details" />
       <Input
         label="1. Property Type"
-        value={type}
-        onChange={e => setType(e.target.value)}
+        name="property_type"
+        defaultValue="HBD"
       />
       <Input
         label="2. Address"
-        value={address1}
-        onChange={e => setAddress1(e.target.value)}
+        name="address_1"
+        defaultValue="Ave 1 Robinson"
       />
       <Input
-        value={address2}
-        onChange={e => setAddress2(e.target.value)}
+        name="address_2"
+        defaultValue="Blk 123, S(000100)"
       />
       <Input
         label="3. Unit Number (Optional)"
-        value={unit}
-        onChange={e => setUnit(e.target.value)}
+        name="unit_number"
       />
     </div>
   )

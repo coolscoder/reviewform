@@ -14,21 +14,18 @@ const TYPES = [
 ]
 
 const Agent = () => {
-  const [name, setName] = useState('John Doe')
-  const [number, setNumber] = useState('+65 9876 5432')
-
   return (
     <div className={styles.agent}>
       <Title title="Agent Information" />
       <Input
         label="1. Agent's Name"
-        value={name}
-        onChange={e => setName(e.target.value)}
+        name="agent_name"
+        defaultValue="John Doe"
       />
       <Input
         label="2. Agent's Contact Number"
-        value={number}
-        onChange={e => setNumber(e.target.value)}
+        name="agent_number"
+        defaultValue="+65 9876 5432"
       />
       <p className={styles.title}>3. Transaction Type</p>
       <RadioGroup>
